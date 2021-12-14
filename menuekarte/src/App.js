@@ -49,11 +49,9 @@ function App() {
           (result) => {
             setIsLoaded(true);
             setTest(result);
+            console.log(Menue);
             console.log(test);
           },
-          // Note: it's important to handle errors here
-          // instead of a catch() block so that we don't swallow
-          // exceptions from actual bugs in components.
           (error) => {
             setIsLoaded(true);
             setError(error);
@@ -62,18 +60,16 @@ function App() {
     }, [])
    
     
-   
-  
     const MontagsEssen = test.Montag;
     const DienstagEssen = test.Dienstag;
     const MittwochEssen = test.Mittwoch;
     const DonnerstagEssen = test.Donnerstag;
     const FreitagEssen = test.Freitag;
-  return(
+  
+    return(
     
     <div >
         <div className="wrapper-menue">
-        
           <Tag tag="Montag" tagesDatenSatz={MontagsEssen}/>
           <Tag tag="Dienstag" tagesDatenSatz={DienstagEssen}/>
           <Tag tag="Mittwoch" tagesDatenSatz={MittwochEssen}/>
