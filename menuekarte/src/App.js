@@ -1,12 +1,6 @@
 import './App.css';
-import {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import Menue from './menuekarten/kw1.json';
-
-
-let requestUrl = 'https://raw.githubusercontent.com/codedannys/fleischerei/main/menuekarte/src/menuekarten/kw1.json';
-
-
-
 
 
 const Tageskarte = ({tagesDatenSatz}) => {
@@ -42,7 +36,7 @@ function App() {
     const [test, setTest] = useState(Menue);
 
     useEffect(() => {
-      fetch(requestUrl)
+      fetch('https://www.danny-schreier.de/kw1.json')
         .then(res => res.json())
         .then(
           (result) => {
