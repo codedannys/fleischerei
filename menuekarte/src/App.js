@@ -38,8 +38,7 @@ const Tag = ({tag,tagesDatenSatz}) => {
 
 function App() {
 
-    const [error,setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
+   
     const [test, setTest] = useState(Menue);
 
     useEffect(() => {
@@ -47,17 +46,10 @@ function App() {
         .then(res => res.json())
         .then(
           (result) => {
-            setIsLoaded(true);
             setTest(result);
-            console.log(Menue);
-            console.log(test);
-          },
-          (error) => {
-            setIsLoaded(true);
-            setError(error);
           }
         )
-    }, [])
+    }, [test])
    
     
     const MontagsEssen = test.Montag;
