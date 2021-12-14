@@ -1,15 +1,12 @@
 import './App.css';
+import {useState, useEffect} from 'react';
 import Menue from './menuekarten/kw1.json';
 
 
+let requestUrl = 'https://raw.githubusercontent.com/codedannys/fleischerei/main/menuekarte/src/menuekarten/kw1.json';
 
 
 
-const MontagsEssen = Menue.Montag;
-const DienstagEssen = Menue.Dienstag;
-const MittwochEssen = Menue.Mittwoch;
-const DonnerstagEssen = Menue.Donnerstag;
-const FreitagEssen = Menue.Freitag;
 
 
 const Tageskarte = ({tagesDatenSatz}) => {
@@ -40,21 +37,43 @@ const Tag = ({tag,tagesDatenSatz}) => {
 
 
 function App() {
-  let requestUrl = 'https://www.danny-schreier.de/kw1.json';
-  let request = new XMLHttpRequest();
 
-  request.open('GET', requestUrl);
-  request.responseType = 'json';
-  request.send();
+    const [error,setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [test, setTest] = useState(Menue);
 
-  request.onload = function(){
-    const data = request.response;
-    console.log(data);
-  }
-
-  return (
+    useEffect(() => {
+      fetch(requestUrl)
+        .then(res => res.json())
+        .then(
+          (result) => {
+            setIsLoaded(true);
+            setTest(result);
+            console.log(test);
+          },
+          // Note: it's important to handle errors here
+          // instead of a catch() block so that we don't swallow
+          // exceptions from actual bugs in components.
+          (error) => {
+            setIsLoaded(true);
+            setError(error);
+          }
+        )
+    }, [])
+   
+    
+   
+  
+    const MontagsEssen = test.Montag;
+    const DienstagEssen = test.Dienstag;
+    const MittwochEssen = test.Mittwoch;
+    const DonnerstagEssen = test.Donnerstag;
+    const FreitagEssen = test.Freitag;
+  return(
+    
     <div >
         <div className="wrapper-menue">
+        
           <Tag tag="Montag" tagesDatenSatz={MontagsEssen}/>
           <Tag tag="Dienstag" tagesDatenSatz={DienstagEssen}/>
           <Tag tag="Mittwoch" tagesDatenSatz={MittwochEssen}/>
