@@ -1,0 +1,73 @@
+{   
+    "Montag": [
+        {
+            "name": "Lasagne",
+            "preis": "4.50"
+        },
+        {
+            "name": "Nudeln mit Wurstgulasch",
+            "preis": "5.50"
+        },
+        {
+            "name": "Essen3",
+            "preis": "5.00"
+        }
+    ],
+    "Dienstag": [
+        {
+            "name": "Essen4",
+            "preis": "4.50"
+        },
+        {
+            "name": "Essen5",
+            "preis": "5.50"
+        },
+        {
+            "name": "Essen6",
+            "preis": "5.00"
+        }
+    ],
+    "Mittwoch": [
+        {
+            "name": "Essen7",
+            "preis": "4.50"
+        },
+        {
+            "name": "Essen8",
+            "preis": "5.50"
+        },
+        {
+            "name": "Essen9",
+            "preis": "5.00"
+        }
+    ],
+    "Donnerstag": [
+        {
+            "name": "Essen10",
+            "preis": "4.50"
+        },
+        {
+            "name": "Essen11",
+            "preis": "5.50"
+        },
+        {
+            "name": "Essen12",
+            "preis": "5.00"
+        }
+    ],
+    "Freitag": [
+        {
+            "name": "Essen13",
+            "preis": "4.50"
+        },
+        {
+            "name": "Essen14",
+            "preis": "5.50"
+        },
+        {
+            "name": "Essen15",
+            "preis": "5.00"
+        }
+    ]
+}
+

@@ -1,0 +1,12 @@
+{
+    "Lasagne": {
+        "index": 0,
+        "name": "Lasagne",
+        "preis": 4.90
+    },
+    "Nudeln": {
+        "index": 1,
+        "name": "Nudeln mit Wurstgulasch",
+        "preis": 4.50
+    }
+}

@@ -1,0 +1,34 @@
+.wrapper-menue{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wochentag{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wochentag-tag{
+  width: 200px;
+}
+.wochentag-essen{
+  width: 300px;
+}
+li{
+  margin: 25px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.essen-preis{
+  margin-left: 25px;
+}
