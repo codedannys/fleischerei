@@ -36,7 +36,7 @@ function App() {
     const [test, setTest] = useState(Menue);
 
     useEffect(() => {
-      fetch('https://www.danny-schreier.de/kw1.json')
+      fetch('https://raw.githubusercontent.com/codedannys/fleischerei/main/menuekarte/src/menuekarten/kw1.json')
         .then(res => res.json())
         .then(
           (result) => {
