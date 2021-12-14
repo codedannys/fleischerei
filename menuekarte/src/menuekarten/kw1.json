@@ -1,4 +1,4 @@
-{   
+{
     "Montag": [
         {
             "name": "Glühweingulasch",
@@ -19,17 +19,17 @@
             "preis": "4.50"
         },
         {
-            "name": "Essen5",
+            "name": "Danny Special",
             "preis": "5.50"
         },
         {
-            "name": "Essen6",
+            "name": "Roberto Special",
             "preis": "5.00"
         }
     ],
     "Mittwoch": [
         {
-            "name": "Essen7",
+            "name": "Sophie Special",
             "preis": "4.50"
         },
         {
@@ -70,4 +70,3 @@
         }
     ]
 }
-
