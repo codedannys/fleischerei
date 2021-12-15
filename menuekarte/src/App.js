@@ -16,7 +16,7 @@ const Tag = ({tag,tagesDatenSatz}) => {
   return(
   <div className="wochentag">
       <div className="wochentag-tag">
-            <h2>{tag}</h2>
+            <h2>{tag} :</h2>
       </div>
             
       <div className="wochentag-essen">

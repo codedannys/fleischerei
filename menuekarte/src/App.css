@@ -6,20 +6,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
 .wochentag{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
 }
 .wochentag-tag{
   width: 200px;
+  
 }
 .wochentag-essen{
-  width: 300px;
+  width: 520px;
 }
 li{
   margin: 25px 0;
@@ -30,5 +34,6 @@ li{
   align-items: center;
 }
 .essen-preis{
-  margin-left: 25px;
+ 
+  width: 75px;
 }
