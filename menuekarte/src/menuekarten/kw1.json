@@ -29,44 +29,44 @@
     ],
     "Mittwoch": [
         {
-            "name": "Sophie Special",
-            "preis": "4.50"
+            "name": "Grüner Bohneneintopf",
+            "preis": "3.50"
         },
         {
-            "name": "Essen8",
-            "preis": "5.50"
+            "name": "Schweinesteak Strindberg  mit Kartoffeln und Gemüse",
+            "preis": "5.70"
         },
         {
-            "name": "Essen9",
-            "preis": "5.00"
+            "name": "Szegediner Gulasch mit Knödeln",
+            "preis": "5.30"
         }
     ],
     "Donnerstag": [
         {
-            "name": "Essen10",
-            "preis": "4.50"
+            "name": "Gemüseeintopf",
+            "preis": "3.50"
         },
         {
-            "name": "Essen11",
-            "preis": "5.50"
+            "name": "Schweinebraten mit Gemüse und Kartoffeln",
+            "preis": "5.30"
         },
         {
-            "name": "Essen12",
-            "preis": "5.00"
+            "name": "Lasagne",
+            "preis": "4.90"
         }
     ],
     "Freitag": [
         {
-            "name": "Essen13",
-            "preis": "4.50"
+            "name": "Soljanka mit Brötchen",
+            "preis": "3.20"
         },
         {
-            "name": "Essen14",
-            "preis": "5.50"
+            "name": "Griesbrei mit heißen Kirschen",
+            "preis": "3.70"
         },
         {
-            "name": "Essen15",
-            "preis": "5.00"
+            "name": "Schinken-Hackfleischröllchen mit Reis",
+            "preis": "5.40"
         }
     ]
 }
